@@ -3,6 +3,6 @@ import { CreatePostDto } from './createPost.dto';
 
 @InputType()
 export class UpdatePostDto extends PartialType(CreatePostDto) {
-  @Field(() => Int)
+  @Field(type => Int)
   id!: number; 
 }

@@ -4,6 +4,6 @@ import { InputType, Field } from '@nestjs/graphql';
 export class CreatePostDto {
   @Field(() => String)
   caption: string = '';
-  @Field()
+  @Field(() => String)
   imageUrl: string = '';
 }

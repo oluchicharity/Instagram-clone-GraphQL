@@ -1,8 +1,8 @@
 import { Resolver, Query, Mutation, Args, Int } from '@nestjs/graphql';
 import { PostService } from './post.service';
 import { Post } from './post.entity';
-import { CreatePostDto } from './dtos/createPost.dto';
-import { UpdatePostDto } from './dtos/updatePost.dto';
+import { CreatePostDto } from './Dto/createPost.dto';
+import { UpdatePostDto } from './Dto/updatePost.dto';
 
 @Resolver(of => Post)
 export class PostResolver {
