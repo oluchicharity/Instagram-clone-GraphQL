@@ -26,8 +26,8 @@
 
 # Instagram Clone
 
-```This project is an Instagram clone built with NestJS, GraphQL, PostgreSQL, and TypeORM.
-```
+This project is an Instagram clone built with NestJS, GraphQL, PostgreSQL, and TypeORM.
+
 ## Installation
 
 ```bash
