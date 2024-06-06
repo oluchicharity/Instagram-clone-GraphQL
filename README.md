@@ -24,6 +24,16 @@
 
 ## Description
 
+# Instagram Clone
+
+```This project is an Instagram clone built with NestJS, GraphQL, PostgreSQL, and TypeORM.
+```
+## Installation
+
+```bash
+npm install
+```
+
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
 ## Installation
@@ -43,6 +53,22 @@ $ npm run start:dev
 
 # production mode
 $ npm run start:prod
+```
+
+## Populate the database with dummy data
+
+```bash
+$npm run populate-db
+```
+
+## Environment Variables
+```Create a .env file at the root of the project and add the following variables:
+
+DB_HOST=localhost
+DB_PORT=5432
+DB_USERNAME=Oluchi
+DB_PASSWORD= Agbakwuru
+DB_NAME=instagram_clone
 ```
 
 ## Test
