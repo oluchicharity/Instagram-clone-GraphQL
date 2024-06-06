@@ -29,8 +29,9 @@ createPost(@Args('createPostInput') createPostInput: CreatePostDto): Promise<Pos
     return this.postService.update(updatePostInput.id, updatePostInput);
   }
 
-  @Mutation(returns => Post)
-  deletePost(@Args('id', { type: () => Int }) id: number): Promise<Post> {
-    return this.postService.remove(id);
+  @Mutation(returns => Boolean)
+  async deletePost(@Args('id', { type: () => Int }) id: number) {
+    await this.postService.remove(id);
+    return true;
   }
 }

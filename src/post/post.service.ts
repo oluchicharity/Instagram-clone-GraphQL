@@ -44,13 +44,8 @@ export class PostService {
     return post;
   }
 
-  async remove(id: number): Promise<Post> {
-    const post = await this.findOne(id);
-    if (!post) {
-      throw new Error('Post not found');
-    }
-    await this.postRepository.remove(post);
-    return post;
+  async remove(id: number): Promise<void> {
+    await this.postRepository.delete(id);
   }
 }
 
